@@ -7,16 +7,16 @@ public class ManageCanvas : MonoBehaviour
     public GameObject Inventory;
     public GameObject Map;
     public GameObject Chat;
-    public bool hasMap; 
-
+    public bool hasMap;
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.I))
         {
             Inventory.SetActive(!Inventory.activeSelf);
@@ -35,5 +35,10 @@ public class ManageCanvas : MonoBehaviour
                 print("M pressed");
             }
         }
+    }
+
+    private void OnMouseDown()
+    {
+        Cursor.visible = true;
     }
 }
