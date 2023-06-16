@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,16 +10,19 @@ public class Inventory : MonoBehaviour
     public static Inventory Instance; 
 
     private List<Item> InventoryList = new List<Item>();
-    public Scrollbar InventoryDisplay;
 
-   // public Transform ItemContent; 
-    public Transform InventoryItem;
-    public Sprite newSprite;
+    public GameObject MiniMap; 
+
+    public GameObject[] InventoryDisplay;
+
+    //public Transform ItemContent; 
+   // public GameObject InventoryItem;
+    //public Sprite newSprite;
 
     void Start()
     {
         Instance = this;
-        Image imageComponent = InventoryItem.GetComponent<Image>();
+        //Image imageComponent = InventoryItem.GetComponent<Image>();
         // Set the source image
         //imageComponent.sprite = newSprite;
     }
@@ -40,28 +44,21 @@ public class Inventory : MonoBehaviour
 
     public void DisplayItems()
     {
-        //foreach(var item in InventoryList)
-        //{
-        //    GameObject obj = Instantiate(InventoryItem);
-        //    var ItemName = obj.transform.Find("ItemName").GetComponent<Text>();
-        //    var itemIcon = obj.transform.Find("Icon").GetComponent<Image>();
-
-
-        //    ItemName.text = item.itemName;
-        //    itemIcon.sprite = item.icon; 
-
-        //}
-
-        // Get the Image component of the target GameObject
-
         foreach (var item in InventoryList)
         {
-           
-            
+            if(item.name == "Flashlight")
+            {
+                InventoryDisplay[0].SetActive(true);
+
+            }
+            if (item.name == "Map")
+            {
+                InventoryDisplay[1].SetActive(true);
+                MiniMap.SetActive(true);
+            }
 
         }
 
-       
     }
 
    

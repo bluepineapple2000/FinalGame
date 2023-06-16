@@ -7,11 +7,13 @@ public class HealthSystem : MonoBehaviour
 {
 
     public int Health = 100;
-    public Slider Healthslider;
+    // I planned to make a healthsystem here, but I didn't get to work on multiplayer
+
+   // public Slider Healthslider;
     // Start is called before the first frame update
     void Start()
     {
-        Healthslider.value = Health;
+       // Healthslider.value = Health;
     }
 
     // Update is called once per frame
@@ -25,7 +27,7 @@ public class HealthSystem : MonoBehaviour
         if (other.name == "Ghost")
         {
             Health = Health - 50;
-            Healthslider.value = Health;
+         //   Healthslider.value = Health;
         }
     }
 }

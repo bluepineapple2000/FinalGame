@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 685133474}
-  - component: {fileID: 685133473}
+  - component: {fileID: 685133475}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -720,21 +720,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &685133473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685133472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99e05174d2857473c938656ceb85cc29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ConnectionStatus: {fileID: 1936542388}
-  UserNameInput: {fileID: 804164534}
-  UserConnectButton: {fileID: 713986591}
 --- !u!4 &685133474
 Transform:
   m_ObjectHideFlags: 0
@@ -750,6 +735,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685133475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685133472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df47088cdb0342409a987ad88c45d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectionStatus: {fileID: 1936542388}
+  UserNameInput: {fileID: 804164534}
+  UserConnectButton: {fileID: 713986591}
 --- !u!1 &686141622
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 685133473}
+      - m_Target: {fileID: 685133475}
         m_TargetAssemblyTypeName: ConnectGame, Assembly-CSharp
         m_MethodName: OnClick_JoinOrCreateRoom
         m_Mode: 1

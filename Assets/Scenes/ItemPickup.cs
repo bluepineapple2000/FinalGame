@@ -15,7 +15,7 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("pickup Flashlight Trigger");
+        print("pickup Trigger");
         Pickup();
     }
 }

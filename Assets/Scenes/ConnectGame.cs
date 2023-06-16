@@ -58,7 +58,7 @@ public class ConnectGame : MonoBehaviourPunCallbacks
             {
                 IsVisible = true,
                 IsOpen = true,
-                MaxPlayers = 8
+                MaxPlayers = 2
             };
 
             PhotonNetwork.NickName = UserNameInput.text;

@@ -28,25 +28,25 @@ public class PatrolGhosts : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //print(other.name);
-        //if (!isEnd)
-        //{
-        //    currentPatrolIndex++;
-        //}
-        //else
-        //{
-        //    currentPatrolIndex--;
-        //}
-        //agent.destination = patrolPoints[currentPatrolIndex].position;
+        print(other.name);
+        if (!isEnd)
+        {
+            currentPatrolIndex++;
+        }
+        else
+        {
+            currentPatrolIndex--;
+        }
+        agent.destination = patrolPoints[currentPatrolIndex].position;
 
-        //if (currentPatrolIndex == patrolPoints.Count - 1)
-        //{
-        //    isEnd = true; 
-        //}
-        //else if (currentPatrolIndex == 0)
-        //{
-        //    isEnd = false; 
-        //}
-   
+        if (currentPatrolIndex == patrolPoints.Count - 1)
+        {
+            isEnd = true;
+        }
+        else if (currentPatrolIndex == 0)
+        {
+            isEnd = false;
+        }
+
     }
 } 

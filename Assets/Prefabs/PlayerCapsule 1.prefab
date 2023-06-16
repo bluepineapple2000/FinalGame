@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 6526102791990399123}
   - component: {fileID: 7367608362954067171}
   - component: {fileID: 1273286026725910451}
+  - component: {fileID: 527737874761768185}
   m_Layer: 8
   m_Name: PlayerCapsule 1
   m_TagString: Player
@@ -455,13 +456,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7367608362954067183}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99885abed2f284dfebe337e239903a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
   Healthslider: {fileID: 0}
+--- !u!114 &527737874761768185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367608362954067183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &1273286026791632006
 PrefabInstance:
   m_ObjectHideFlags: 0
